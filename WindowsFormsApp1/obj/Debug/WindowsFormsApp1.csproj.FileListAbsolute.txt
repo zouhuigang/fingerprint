@@ -9,3 +9,5 @@ D:\mnt\c#\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 D:\mnt\c#\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
 D:\mnt\c#\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
 D:\mnt\c#\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\libzkfpcsharp.dll
+D:\mnt\c#\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form2.resources
+D:\mnt\c#\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FormLocalDbList.resources

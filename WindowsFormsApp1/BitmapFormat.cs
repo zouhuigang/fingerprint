@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Runtime.InteropServices;
 using System.IO;
+using System.Drawing;
 
 namespace Sample
 {
@@ -37,6 +38,18 @@ namespace Sample
             public int biClrUsed;
             public int biClrImportant;
         }
+
+
+        /*
+         将byte转图片
+             */
+        public static Image BytesToImage(byte[] buffer)
+        {
+            MemoryStream ms = new MemoryStream(buffer);
+            Image image = System.Drawing.Image.FromStream(ms);
+            return image;
+        }
+
 
         /*******************************************
         * 函数名称：RotatePic       

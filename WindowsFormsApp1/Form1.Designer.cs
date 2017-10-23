@@ -35,17 +35,19 @@
             this.textTips = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.serinalNumber = new System.Windows.Forms.TextBox();
             this.connDevice = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.LocalDb = new System.Windows.Forms.Button();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel2 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel3 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel4 = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.fingerprintImg)).BeginInit();
             this.SuspendLayout();
             // 
             // conZk
             // 
-            this.conZk.Location = new System.Drawing.Point(8, 86);
+            this.conZk.Location = new System.Drawing.Point(8, 59);
             this.conZk.Name = "conZk";
             this.conZk.Size = new System.Drawing.Size(75, 23);
             this.conZk.TabIndex = 1;
@@ -55,7 +57,7 @@
             // 
             // bnClose
             // 
-            this.bnClose.Location = new System.Drawing.Point(225, 86);
+            this.bnClose.Location = new System.Drawing.Point(190, 59);
             this.bnClose.Name = "bnClose";
             this.bnClose.Size = new System.Drawing.Size(75, 23);
             this.bnClose.TabIndex = 2;
@@ -65,6 +67,7 @@
             // 
             // fingerprintImg
             // 
+            this.fingerprintImg.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.fingerprintImg.Location = new System.Drawing.Point(428, 25);
             this.fingerprintImg.Name = "fingerprintImg";
             this.fingerprintImg.Size = new System.Drawing.Size(301, 304);
@@ -100,25 +103,9 @@
             this.label1.Text = "指纹仪编号:";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 59);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(83, 12);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "指纹仪序列号:";
-            // 
-            // serinalNumber
-            // 
-            this.serinalNumber.Location = new System.Drawing.Point(100, 53);
-            this.serinalNumber.Name = "serinalNumber";
-            this.serinalNumber.Size = new System.Drawing.Size(229, 21);
-            this.serinalNumber.TabIndex = 8;
-            // 
             // connDevice
             // 
-            this.connDevice.Location = new System.Drawing.Point(117, 86);
+            this.connDevice.Location = new System.Drawing.Point(100, 59);
             this.connDevice.Name = "connDevice";
             this.connDevice.Size = new System.Drawing.Size(75, 23);
             this.connDevice.TabIndex = 9;
@@ -128,7 +115,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(8, 144);
+            this.button1.Location = new System.Drawing.Point(8, 106);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 10;
@@ -138,24 +125,70 @@
             // 
             // LocalDb
             // 
-            this.LocalDb.Location = new System.Drawing.Point(117, 143);
+            this.LocalDb.Location = new System.Drawing.Point(100, 106);
             this.LocalDb.Name = "LocalDb";
             this.LocalDb.Size = new System.Drawing.Size(75, 23);
             this.LocalDb.TabIndex = 11;
-            this.LocalDb.Text = "测试数据库";
+            this.LocalDb.Text = "查看指纹库";
             this.LocalDb.UseVisualStyleBackColor = true;
             this.LocalDb.Click += new System.EventHandler(this.LocalDb_Click);
+            // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Location = new System.Drawing.Point(12, 317);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(89, 12);
+            this.linkLabel1.TabIndex = 12;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "前往安橙网后台";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            // 
+            // linkLabel2
+            // 
+            this.linkLabel2.AutoSize = true;
+            this.linkLabel2.Location = new System.Drawing.Point(119, 316);
+            this.linkLabel2.Name = "linkLabel2";
+            this.linkLabel2.Size = new System.Drawing.Size(65, 12);
+            this.linkLabel2.TabIndex = 13;
+            this.linkLabel2.TabStop = true;
+            this.linkLabel2.Text = "前往学生端";
+            this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
+            // 
+            // linkLabel3
+            // 
+            this.linkLabel3.AutoSize = true;
+            this.linkLabel3.Location = new System.Drawing.Point(207, 316);
+            this.linkLabel3.Name = "linkLabel3";
+            this.linkLabel3.Size = new System.Drawing.Size(65, 12);
+            this.linkLabel3.TabIndex = 14;
+            this.linkLabel3.TabStop = true;
+            this.linkLabel3.Text = "前往教师端";
+            this.linkLabel3.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel3_LinkClicked);
+            // 
+            // linkLabel4
+            // 
+            this.linkLabel4.AutoSize = true;
+            this.linkLabel4.Location = new System.Drawing.Point(297, 316);
+            this.linkLabel4.Name = "linkLabel4";
+            this.linkLabel4.Size = new System.Drawing.Size(65, 12);
+            this.linkLabel4.TabIndex = 15;
+            this.linkLabel4.TabStop = true;
+            this.linkLabel4.Text = "在线工具箱";
+            this.linkLabel4.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel4_LinkClicked);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(784, 462);
+            this.Controls.Add(this.linkLabel4);
+            this.Controls.Add(this.linkLabel3);
+            this.Controls.Add(this.linkLabel2);
+            this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.LocalDb);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.connDevice);
-            this.Controls.Add(this.serinalNumber);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.textTips);
@@ -164,6 +197,7 @@
             this.Controls.Add(this.conZk);
             this.Name = "Form1";
             this.Text = "安橙指纹识别系统";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.fingerprintImg)).EndInit();
             this.ResumeLayout(false);
@@ -178,11 +212,13 @@
         private System.Windows.Forms.TextBox textTips;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox serinalNumber;
         private System.Windows.Forms.Button connDevice;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button LocalDb;
+        private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.LinkLabel linkLabel2;
+        private System.Windows.Forms.LinkLabel linkLabel3;
+        private System.Windows.Forms.LinkLabel linkLabel4;
     }
 }
 
