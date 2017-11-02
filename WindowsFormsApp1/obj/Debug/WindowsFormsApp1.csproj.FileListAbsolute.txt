@@ -11,3 +11,9 @@ D:\mnt\c#\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.res
 D:\mnt\c#\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\libzkfpcsharp.dll
 D:\mnt\c#\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form2.resources
 D:\mnt\c#\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FormLocalDbList.resources
+D:\mnt\c#\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.manifest
+D:\mnt\c#\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.application
+D:\mnt\c#\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe.manifest
+D:\mnt\c#\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.application
+D:\mnt\c#\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\CSkin.dll
+D:\mnt\c#\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\CSkin.xml

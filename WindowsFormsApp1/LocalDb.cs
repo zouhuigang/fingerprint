@@ -137,12 +137,13 @@ namespace WindowsFormsApp1
         {
             public int Autoid;
             public string Realname;
+            public string userid;
             public string Fingerindex;
         }
 
         public UserInfo GetUserInfo(int autoid) {
             UserInfo p1 = new UserInfo();
-            string _sql = "select realname,fingerindex from template where autoid=" + autoid;
+            string _sql = "select realname,fingerindex,userid from template where autoid=" + autoid;
             OleDbDataReader reader = ReadList(_sql);
             while (reader.Read())
             {
@@ -164,6 +165,7 @@ namespace WindowsFormsApp1
                 p1.Autoid = autoid;
                 p1.Realname = reader[0].ToString();
                 p1.Fingerindex = t2;
+                p1.userid= reader[2].ToString();
             }
 
             

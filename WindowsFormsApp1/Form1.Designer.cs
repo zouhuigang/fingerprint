@@ -47,7 +47,7 @@
             // 
             // conZk
             // 
-            this.conZk.Location = new System.Drawing.Point(8, 59);
+            this.conZk.Location = new System.Drawing.Point(7, 76);
             this.conZk.Name = "conZk";
             this.conZk.Size = new System.Drawing.Size(75, 23);
             this.conZk.TabIndex = 1;
@@ -57,7 +57,7 @@
             // 
             // bnClose
             // 
-            this.bnClose.Location = new System.Drawing.Point(190, 59);
+            this.bnClose.Location = new System.Drawing.Point(222, 76);
             this.bnClose.Name = "bnClose";
             this.bnClose.Size = new System.Drawing.Size(75, 23);
             this.bnClose.TabIndex = 2;
@@ -68,9 +68,9 @@
             // fingerprintImg
             // 
             this.fingerprintImg.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.fingerprintImg.Location = new System.Drawing.Point(428, 25);
+            this.fingerprintImg.Location = new System.Drawing.Point(428, 44);
             this.fingerprintImg.Name = "fingerprintImg";
-            this.fingerprintImg.Size = new System.Drawing.Size(301, 304);
+            this.fingerprintImg.Size = new System.Drawing.Size(301, 285);
             this.fingerprintImg.TabIndex = 3;
             this.fingerprintImg.TabStop = false;
             this.fingerprintImg.Click += new System.EventHandler(this.fingerprintImg_Click);
@@ -87,7 +87,7 @@
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(100, 25);
+            this.comboBox1.Location = new System.Drawing.Point(121, 44);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 20);
             this.comboBox1.TabIndex = 5;
@@ -96,7 +96,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 28);
+            this.label1.Location = new System.Drawing.Point(10, 47);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(71, 12);
             this.label1.TabIndex = 6;
@@ -105,7 +105,7 @@
             // 
             // connDevice
             // 
-            this.connDevice.Location = new System.Drawing.Point(100, 59);
+            this.connDevice.Location = new System.Drawing.Point(121, 76);
             this.connDevice.Name = "connDevice";
             this.connDevice.Size = new System.Drawing.Size(75, 23);
             this.connDevice.TabIndex = 9;
@@ -115,7 +115,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(8, 106);
+            this.button1.Location = new System.Drawing.Point(7, 127);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 10;
@@ -125,7 +125,7 @@
             // 
             // LocalDb
             // 
-            this.LocalDb.Location = new System.Drawing.Point(100, 106);
+            this.LocalDb.Location = new System.Drawing.Point(121, 127);
             this.LocalDb.Name = "LocalDb";
             this.LocalDb.Size = new System.Drawing.Size(75, 23);
             this.LocalDb.TabIndex = 11;
@@ -181,6 +181,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.AliceBlue;
             this.ClientSize = new System.Drawing.Size(784, 462);
             this.Controls.Add(this.linkLabel4);
             this.Controls.Add(this.linkLabel3);
@@ -196,6 +197,7 @@
             this.Controls.Add(this.bnClose);
             this.Controls.Add(this.conZk);
             this.Name = "Form1";
+            this.ShadowColor = System.Drawing.Color.Transparent;
             this.Text = "安橙指纹识别系统";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);

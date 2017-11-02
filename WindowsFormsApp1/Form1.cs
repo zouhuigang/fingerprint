@@ -14,10 +14,11 @@ using System.IO;
 using Sample;
 using System.Data.OleDb;
 using System.Media;
+using CCWin;
 
 namespace WindowsFormsApp1
 {
-    public partial class Form1 : Form
+    public partial class Form1 : CCSkinMain
     {
         IntPtr mDevHandle = IntPtr.Zero;
         IntPtr mDBHandle = IntPtr.Zero;
@@ -41,6 +42,7 @@ namespace WindowsFormsApp1
 
         //易联云打印类
         printGPRS f = new printGPRS();
+        http goPrint = new http();
 
         const int MESSAGE_CAPTURED_OK = 0x0400+200;//消息统一采用4位16进制的数
 
@@ -177,6 +179,8 @@ namespace WindowsFormsApp1
             connDevice.Enabled = false;
             bnClose.Enabled = false;
             button1.Enabled = false;
+
+            
         }
 
 
@@ -316,7 +320,8 @@ namespace WindowsFormsApp1
                                     }
                                     textTips.Text = "1:1指纹识别成功, 识别ID： " + fid + ",姓名:"+userInfo.Realname+ ",手指:" + userInfo.Fingerindex + ",识别分数:" + score + "!";
                                     playVoice("print");
-                                    textTips.Text = f.SendGprsPrintContent("邹慧刚");
+                                    //textTips.Text = f.SendGprsPrintContent("邹慧刚");c#直接发送请求给打印机
+                                    textTips.Text = goPrint.SendPrint(userInfo.userid);//请求golang服务器，简介发送打印请求，同时判断是否成功
                                     return;
                                 }
                                 else
