@@ -3,7 +3,12 @@ D:\mnt\c#\WindowsFormsApp1\WindowsFormsApp1\bin\Release\WindowsFormsApp1.exe.man
 D:\mnt\c#\WindowsFormsApp1\WindowsFormsApp1\bin\Release\WindowsFormsApp1.application
 D:\mnt\c#\WindowsFormsApp1\WindowsFormsApp1\bin\Release\WindowsFormsApp1.exe
 D:\mnt\c#\WindowsFormsApp1\WindowsFormsApp1\bin\Release\WindowsFormsApp1.pdb
+D:\mnt\c#\WindowsFormsApp1\WindowsFormsApp1\bin\Release\CSkin.dll
 D:\mnt\c#\WindowsFormsApp1\WindowsFormsApp1\bin\Release\libzkfpcsharp.dll
+D:\mnt\c#\WindowsFormsApp1\WindowsFormsApp1\bin\Release\Newtonsoft.Json.dll
+D:\mnt\c#\WindowsFormsApp1\WindowsFormsApp1\bin\Release\CSkin.xml
+D:\mnt\c#\WindowsFormsApp1\WindowsFormsApp1\bin\Release\Newtonsoft.Json.pdb
+D:\mnt\c#\WindowsFormsApp1\WindowsFormsApp1\bin\Release\Newtonsoft.Json.xml
 D:\mnt\c#\WindowsFormsApp1\WindowsFormsApp1\obj\Release\WindowsFormsApp1.Form1.resources
 D:\mnt\c#\WindowsFormsApp1\WindowsFormsApp1\obj\Release\WindowsFormsApp1.Form2.resources
 D:\mnt\c#\WindowsFormsApp1\WindowsFormsApp1\obj\Release\WindowsFormsApp1.FormLocalDbList.resources

@@ -3,21 +3,28 @@ using System;
 using System.Net;
 using System.Text;
 using System.Security.Cryptography;
+using Newtonsoft.Json;
+using System.Collections.Generic;
+
 namespace WindowsFormsApp1
 {
 
+
+  
+
+
+
     class http
     {
-        private string HttpsWebRoot= "http://192.168.99.100:8098/";
-        //private string HttpsWebRoot = "https://www.anooc.com/";
+        //private string HttpsWebRoot= "http://192.168.99.100:8098/";
+        private string HttpsWebRoot = "https://www.anooc.com/";
 
         public string SendPrint(string uid) {
-            string req = "请求返回数据:";
+            //string req = "请求返回数据:";
             long push_time  = (DateTime.Now.ToUniversalTime().Ticks - 621355968000000000) / 10000000;
             string sign= Md5Hash(uid+push_time+ "win_client");
-            req += HttpPost(HttpsWebRoot + "paike/student/printall", "uid="+ uid + "&push_time="+ push_time+"&sign="+sign+ "&source=win_client");
-
-            return req;
+            string resultJson= HttpPost(HttpsWebRoot + "paike/student/printall", "uid="+ uid + "&push_time="+ push_time+"&sign="+sign+ "&source=win_client");
+            return resultJson;
         }
 
 

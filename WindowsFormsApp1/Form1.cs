@@ -15,6 +15,7 @@ using Sample;
 using System.Data.OleDb;
 using System.Media;
 using CCWin;
+using Newtonsoft.Json;
 
 namespace WindowsFormsApp1
 {
@@ -304,6 +305,7 @@ namespace WindowsFormsApp1
                             if (cbRegTmp <= 0)
                             {
                                 textTips.Text = "指纹库指纹条数为0，请先录入指纹!";
+                                playVoice("dd");
                                 return;
                             }
                             if (bIdentify)
@@ -319,9 +321,22 @@ namespace WindowsFormsApp1
                                         return;
                                     }
                                     textTips.Text = "1:1指纹识别成功, 识别ID： " + fid + ",姓名:"+userInfo.Realname+ ",手指:" + userInfo.Fingerindex + ",识别分数:" + score + "!";
-                                    playVoice("print");
+                                    
                                     //textTips.Text = f.SendGprsPrintContent("邹慧刚");c#直接发送请求给打印机
-                                    textTips.Text = goPrint.SendPrint(userInfo.userid);//请求golang服务器，简介发送打印请求，同时判断是否成功
+                                    string resultJson = goPrint.SendPrint(userInfo.userid);//请求golang服务器，简介发送打印请求，同时判断是否成功
+                                    
+                                    //解析json字符串
+                                    var rs = JsonConvert.DeserializeObject<JsonAnooc>(resultJson);//result为上面的Json数据 
+                                    if (rs.status == 200)
+                                    {
+                                        textTips.Text = "发送打印请求成功!返回信息:"+ resultJson;
+                                        playVoice("line");
+                                    }
+                                    else {
+                                        textTips.Text = "发送打印请求失败!返回信息:" + resultJson;
+                                        playVoice("di");
+                                    }
+
                                     return;
                                 }
                                 else
